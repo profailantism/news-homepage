@@ -1,13 +1,13 @@
-const hamMenu = document.querySelector('.ham-menu-icon');
+const hamIcon = document.querySelector('.ham-menu-icon');
 const closeIcon = document.querySelector('.close-icon');
-const mobileMenu = document.querySelector('.menu.mobile-only');
+const menu = document.querySelector('.menu');
 
-hamMenu.addEventListener('click', () => {
-  hamMenu.classList.toggle('active');
-  mobileMenu.classList.toggle('active');
+hamIcon.addEventListener('click', () => {
+  hamIcon.classList.toggle('active');
+  menu.classList.toggle('active');
 });
 
 closeIcon.addEventListener('click', () => {
-  hamMenu.classList.toggle('active');
-  mobileMenu.classList.toggle('active');
+  hamIcon.classList.toggle('active');
+  menu.classList.toggle('active');
 })

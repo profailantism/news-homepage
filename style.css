@@ -18,6 +18,8 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -47,4 +49,57 @@ a {
 
 body {
   font-family: "Inter", sans-serif;
+  padding: 1rem;
+}
+
+header {
+  padding: 1rem 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ham-menu-icon {
+  margin-left: auto;
+}
+
+.menu.mobile-only {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 1.18rem;
+  height: 100vh;
+  background-color: var(--off-white);
+  width: 100%;
+  max-width: 220px;
+  position: fixed;
+  top: 0;
+  right: -220px;
+  transition: .3s ease;
+}
+
+.menu.mobile-only.active {
+  right: 0;
+}
+
+.menu.mobile-only ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu.mobile-only li {
+  padding: 1rem 1.6rem;
+}
+
+.menu.mobile-only a {
+  color: var(--very-dark-blue);
+}
+
+.close-icon {
+  margin-left: auto;
+  padding: 2.2rem 2rem;
 }
